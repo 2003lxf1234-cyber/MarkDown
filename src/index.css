@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.markdown-preview h1 {
+  @apply text-3xl font-bold mb-4 mt-6;
+}
+
+.markdown-preview h2 {
+  @apply text-2xl font-bold mb-3 mt-5;
+}
+
+.markdown-preview h3 {
+  @apply text-xl font-bold mb-2 mt-4;
+}
+
+.markdown-preview p {
+  @apply mb-4 leading-relaxed;
+}
+
+.markdown-preview ul {
+  @apply list-disc list-inside mb-4;
+}
+
+.markdown-preview ol {
+  @apply list-decimal list-inside mb-4;
+}
+
+.markdown-preview code:not(pre code) {
+  @apply bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-sm;
+}
+
+.markdown-preview pre {
+  @apply mb-4 rounded-lg overflow-x-auto;
+}
+
+.markdown-preview blockquote {
+  @apply border-l-4 border-gray-400 pl-4 italic my-4;
+}
+
+.markdown-preview table {
+  @apply w-full border-collapse mb-4;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  @apply border border-gray-300 dark:border-gray-600 px-4 py-2;
+}
+
+.markdown-preview th {
+  @apply bg-gray-100 dark:bg-gray-700 font-bold;
+}
+
+.markdown-preview a {
+  @apply text-blue-600 dark:text-blue-400 underline;
+}
+
+.markdown-preview img {
+  @apply max-w-full h-auto rounded;
+}
+
+.markdown-preview hr {
+  @apply my-6 border-gray-300 dark:border-gray-600;
+}
